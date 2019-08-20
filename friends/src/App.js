@@ -7,10 +7,16 @@ import Login from './component/Login'
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <h1>Sign Up folks</h1>
-      <Login />
+      {/* <Login /> */}
+      <Route path="/login" component={Login} />
+      <PrivateRoute exact path="/protected" component={GasPrices} />
+
     </div>
+    </Router>
+    
   );
 }
 
