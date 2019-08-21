@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
+import axios from 'axios';
 
-function Friends(){
+
+ function Friends(){
     return (
         <h1>Hello World</h1>
     )
 }
+
+export default Friends;
