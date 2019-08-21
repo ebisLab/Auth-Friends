@@ -25,6 +25,11 @@ const getData = () => {
         <>
         <h1>Hello World</h1>
         <div>
+        {
+                list.map(friend => {
+                    return <div key={friend.id}>{friend.name}</div>
+                })
+            }
         </div>
         </>
     )
